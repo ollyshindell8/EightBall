@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static "eightball/custom.css" %}">
 </head>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar sticky-top navbar-expand-lg navbar-blue bg-dark">
   <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'eightball/eightball.jpeg' %}" height="60px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -19,9 +19,11 @@
         <a class="nav-link" href="{% url 'answer' %}"><font size="+4">Answer</font></a>
       </li>
     </ul>
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active my-2 my-lg-0" style="text-align: right">
+        <a class="nav-link" href="{% url 'about' %}"><font size="+4">About Us</font></a>
+        </li>
+      </ul>
   </div>
-    <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
 </nav>
 {% endblock navbar %}

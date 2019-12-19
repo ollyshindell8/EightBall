@@ -4,8 +4,18 @@
     <h1></h1>
 <h1 style="text-align:center">The Eightball Says...</h1>
 <body>
+    <div class = "main">
+    <marquee class="marq" bgcolor = "Green" direction = "left" loop="" >
+        <div class="thisisbad">Wow what a wonderful answer Hooray!!!!</div>
+    </marquee>
+    </div>
 <p style="text-align:center">
     {{ random_item }}
 </p>
+    <div class = "main">
+    <marquee class="marq" bgcolor = "Red" direction = "right" loop="" >
+        <div class="thisisbad">Like you must be so proud!!!!</div>
+    </marquee>
+    </div>
 </body>
 {% endblock content %}

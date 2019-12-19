@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views.generic import ListView, TemplateView
 
 from eightball.models import Answers
@@ -26,3 +25,6 @@ class QuestionView(TemplateView):
 class IndexView(TemplateView):
     template_name = "index.html"
 
+
+class AboutView(TemplateView):
+    template_name = "about.html"

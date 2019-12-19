@@ -1,1 +1,9 @@
-div.jumbotron {background-color: #000000;}
+div.jumbotron {background-color: #95110f;}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+div.h1 {background-blend-mode: color}

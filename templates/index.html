@@ -2,6 +2,11 @@
 {% load static %}
 {% block content %}
 <div class="jumbotron text-center">
+        <div class = "main">
+    <marquee class="marq" bgcolor = "Green" direction = "left" scrollamount="5000" loop="" >
+        <div class="thisisbad"><font color = "Red">/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\|/|\</font></div>
+    </marquee>
+    </div>
     <img src="{% static 'eightball/eightball.jpeg' %}" height="200px">
     <h1>Eightball</h1>
     <a class="btn btn-outline-dark btn-lg" role="button" href="{% url 'question' %}">Ask A Question!</a>

@@ -1,6 +1,6 @@
 from django.views.generic import ListView, TemplateView
 
-from eightball.models import Answers
+from eightball.models import Answers, NormalAnswers
 
 import random
 
@@ -28,3 +28,16 @@ class IndexView(TemplateView):
 
 class AboutView(TemplateView):
     template_name = "about.html"
+
+
+class NormalAnswerView(ListView):
+    model = NormalAnswers
+    template_name = "return_answer.html"
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super().get_context_data(**kwargs)
+        # Add in a QuerySet of all the books
+        answers = NormalAnswers.objects.all()
+        context['random_item'] = random.choice(answers)
+        return context

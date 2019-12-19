@@ -1,9 +1,14 @@
 div.jumbotron {background-color: #95110f;}
 
 .navbar {
-  position: fixed;
   top: 0;
   width: 100%;
+  padding: 10px 0;
+}
+
+nav li {
+   display: inline-block;
+   padding: 5px 15px;
 }
 
 div.h1 {background-blend-mode: color}
